@@ -16,7 +16,7 @@ void loop() {
   while (Serial.available()) {
     uint8_t b = Serial.read();
     receiver.handleByte(b);
-    Serial.write(b); // Echo back
+    // Serial.write(b); // Echo back
   }
   if (receiver.hasCommand()) {
     Command cmd = receiver.getCommand();

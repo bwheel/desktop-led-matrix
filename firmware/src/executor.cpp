@@ -44,6 +44,7 @@ void Executor::handleHelp() {
   Serial.println("Available commands:");
   Serial.println("PING - Check if the device is responsive");
   Serial.println("HELP - List available commands");
+  Serial.println("FWVERSION - Get firmware version");
   Serial.println("CLEAR - Clear the display");
   Serial.println("PIXEL|<x>|<y>|<color> - Set pixel at (x,y) to color (0 or 1)");
   Serial.println("RENDER|<col1>|<col2>|...|<col20> - Render the full display buffer");
